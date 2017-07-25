@@ -10,14 +10,7 @@
              replace: 'glo-ar-{{ansible_hostname}}'
              backup: yes
 
-    - name: Updating /etc/sysconfig/network file
-      replace:
-             dest: /etc/sysconfig/network
-             regexp: '{{ansible_hostname}}'
-             replace: '{{inventory_hostname}}'
-
-
-    - name: Creating new LVM Volume Group
+        - name: Creating new LVM Volume Group
       lvg:
              vg: vg01
              pvs: /dev/sdb
