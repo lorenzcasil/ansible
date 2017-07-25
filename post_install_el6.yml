@@ -21,7 +21,7 @@
              lv: lvlocal
              size: 100%FREE
 
-    - name: Creating a xfs filesystem for local disk
+    - name: Creating a ext4 filesystem for local disk
       filesystem:
              fstype: ext4
              dev: /dev/mapper/vg01-lvlocal
@@ -50,7 +50,7 @@
             
     - name: Install package software
       yum: 
-             name: python2-pip
+             name: python-pip
              state: latest
                         
     - name:  Upgrading python-pip
