@@ -6,7 +6,7 @@
     - name: Adding glo-ar-{{ansible_hostname}} to AllowGroups in SSHD
       replace:
              dest: /etc/ssh/sshd_config
-             regexp: 'glo-ar-iahdvltpl001'
+             regexp: 'glo-ar-iahdvltplc006'
              replace: 'glo-ar-{{ansible_hostname}}'
              backup: yes
 
