@@ -10,7 +10,7 @@
              replace: 'glo-ar-{{ansible_hostname}}'
              backup: yes
 
-        - name: Creating new LVM Volume Group
+    - name: Creating new LVM Volume Group
       lvg:
              vg: vg01
              pvs: /dev/sdb
