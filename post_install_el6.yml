@@ -68,7 +68,7 @@
       expect: 
              command: /bin/bash -c "/opt/pbis/bin/domainjoin-cli join logistics.corp casill-adm"
              responses: 
-                    Password*: "r00t@2015"
+                    password*: "r00t@2015"
                     
     - name: Restarting PBIS service
       shell:  /bin/bash -c "/opt/pbis/bin/config DomainManagerIgnoreAllTrusts true; service lwsmd restart; sleep 5"
